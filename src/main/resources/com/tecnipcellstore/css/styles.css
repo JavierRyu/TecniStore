@@ -1,0 +1,106 @@
+
+/* Fuentes Importadas */
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* DashBoard */
+
+/* Panel Principal */
+.root-pane {
+    -fx-background-color: #f8f9fc;
+}
+
+/* SideBar */
+.sidebar-compact {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #fafbfc);
+    -fx-min-width: 60;
+    -fx-max-width: 60;
+    -fx-pref-width: 60;
+    -fx-border-color: #d4d7dc;
+    -fx-border-width: 1;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-padding: 12 8 12 8;
+    -fx-spacing: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.06), 8, 0, 0, 2);
+    -fx-transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    -fx-alignment: top-center;
+}
+
+.sidebar-compact:hover {
+    -fx-border-color: #c1c5cc;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 12, 0, 2, 4);
+}
+
+/* Contenedor Icono */
+.sidebar-icon-container {
+    -fx-cursor: hand;
+    -fx-background-color: transparent;
+    -fx-background-radius: 4;
+    -fx-min-width: 33;
+    -fx-pref-width: 33;
+    -fx-max-width: 33;
+    -fx-min-height: 33;
+    -fx-pref-height: 33;
+    -fx-transition: all 0.25s ease;
+    -fx-alignment: center;
+    -fx-margin: 10;
+}
+
+.sidebar-icon-container:hover {
+    -fx-background-color: rgba(0, 0, 0, 0);
+    -fx-effect: dropshadow(gaussian, rgba(9, 132, 227, 0.15), 8, 0, 0, 2);
+    -fx-translate-y: -2;
+}
+
+.sidebar-compact:hover .sidebar-icon-label {
+    -fx-font-size: 11px;
+    -fx-font-weight: 700;
+    -fx-opacity: 1;
+}
+
+.sidebar-icon-container:hover .sidebar-icon-label {
+    -fx-text-fill: #0984e3;
+}
+
+/* Separador en el sidebar */
+.sidebar-separator {
+    -fx-border-color: rgba(0, 0, 0, 0);
+    -fx-border-width: 0.5;
+}
+
+/* Estilo activo para el menú */
+.sidebar-menu-item-active {
+    -fx-background-color: #7fffd4;
+    -fx-background-radius: 8;
+    -fx-effect: dropshadow(gaussian, rgba(32, 201, 180, 0.2), 8, 0, 0, 2);
+}
+
+.sidebar-menu-item-active .sidebar-icon-label {
+    -fx-text-fill: #0a7355;
+    -fx-font-weight: 700;
+    -fx-opacity: 1;
+}
+
+/* Top Bar */
+.main-container {
+    -fx-background-color: #f8f9fc;
+    -fx-spacing: 0;
+}
+
+.top-bar {
+    -fx-padding: 15 25 15;
+}
+
+.top-bar-title {
+    -fx-font-family: "Inter";
+    -fx-font-size: 2.3em;
+    -fx-font-weight: 900;
+    -fx-text-fill: dark;
+}
+
+.top-bar-subtitle {
+    -fx-font-family: "Inter";
+    -fx-font-size: 1.8em;
+    -fx-font-weight: 600;
+    -fx-fill: linear-gradient(from 0% 0% to 100% 0%, #2FD6AA, #78DE18);
+}
