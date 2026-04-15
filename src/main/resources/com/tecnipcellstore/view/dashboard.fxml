@@ -82,15 +82,21 @@
             <!-- Top Bar -->
             <HBox styleClass="top-bar" alignment="CENTER_LEFT">
                 <padding>
-                    <Insets left="20.0" top="10.0" bottom="10.0" right="20.0"/>
+                    <Insets left="15.0" top="15.0" bottom="15.0" right="15.0"/>
                 </padding>
                 <!-- Títulos -->
                 <VBox alignment="CENTER_LEFT" spacing="2">
-                    <Label text="DashBoard" styleClass="top-bar-title"/>
+                    <padding>
+                        <Insets top="10.0"/>
+                    </padding>
                     <TextFlow>
-                        <Text text="TecniStore" styleClass="top-bar-subtitle"/>
+                        <Text text="TecniStore" styleClass="top-bar-title"/>
+                    </TextFlow>
+                    <TextFlow>
+                        <Text text="Bienvenido!" styleClass="top-bar-subtitle"/>
                     </TextFlow>
                 </VBox>
+
             </HBox>
 
             <!-- Contenido Central (Crece) -->
