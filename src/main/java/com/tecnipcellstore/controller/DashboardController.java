@@ -11,19 +11,22 @@ import java.util.Objects;
 public class DashboardController {
 
     @FXML
+    private HBox ganancia;
+
+    @FXML
     private HBox inventario;
 
     @FXML
     private HBox ventas;
 
     @FXML
-    private Button btnAgregarProducto;
-
-    @FXML
-    private Button btnListarProductos;
+    private HBox compra;
 
     @FXML
     private VBox centerContent;
+
+    @FXML
+    protected void onCategoryGananciaClick() { cargarVista("/com/tecnipcellstore/view/dashboard.fxml");}
 
     @FXML
     protected void onCategoryInventarioClick() {
@@ -33,18 +36,6 @@ public class DashboardController {
     @FXML
     protected void onCategoryVentasClick() {
         cargarVista("/com/tecnipcellstore/view/ventas.fxml");
-    }
-
-    @FXML
-    protected void onAgregarProducto() {
-        System.out.println("Botón 'Agregar Producto' presionado");
-        // Aquí abriremos una ventana para agregar producto
-    }
-
-    @FXML
-    protected void onListarProductos() {
-        System.out.println("Botón 'Listar Productos' presionado");
-        // Aquí cargaremos y mostraremos los productos
     }
 
     private void cargarVista(String rutaFXML) {

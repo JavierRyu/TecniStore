@@ -51,6 +51,17 @@
 
                 <!-- Botones de Navegación -->
 
+                <!-- dashboard -->
+                <HBox fx:id="ganancia" styleClass="sidebar-icon-container" alignment="CENTER"
+                      onMouseClicked="#onCategoryGananciaClick">
+                    <ImageView fitWidth="22" fitHeight="22" preserveRatio="true">
+                        <image>
+                            <Image url="@../images/sidebar/dashboard.png"/>
+                        </image>
+                    </ImageView>
+                    <Label text="Otros" styleClass="sidebar-icon-label" visible="false" managed="false"/>
+                </HBox>
+
                 <!-- Inventario -->
                 <HBox fx:id="inventario" styleClass="sidebar-icon-container" alignment="CENTER"
                       onMouseClicked="#onCategoryInventarioClick">
@@ -72,6 +83,18 @@
                     </ImageView>
                     <Label text="Ventas" styleClass="sidebar-icon-label" visible="false" managed="false"/>
                 </HBox>
+
+                <!-- Compra -->
+                <HBox fx:id="compra" styleClass="sidebar-icon-container" alignment="CENTER"
+                      onMouseClicked="#onCategoryVentasClick">
+                    <ImageView fitWidth="22" fitHeight="22" preserveRatio="true">
+                        <image>
+                            <Image url="@../images/sidebar/compra.png"/>
+                        </image>
+                    </ImageView>
+                    <Label text="Ventas" styleClass="sidebar-icon-label" visible="false" managed="false"/>
+                </HBox>
+
             </VBox>
         </HBox>
     </left>
